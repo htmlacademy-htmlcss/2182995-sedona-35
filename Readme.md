@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nastya Ponomareva](https://up.htmlacademy.ru/htmlcss/35/user/2182995).
-* Наставник: `Неизвестно`.
+* Наставник: `Анастасия Полозова` (https://htmlacademy.ru/profile/id258631).
 
 ---
 
