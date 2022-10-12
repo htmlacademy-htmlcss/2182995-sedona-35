@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  background: white;
+}
+
+.main-header {
+  background: white;
+  color: black;
+
+}
+
+.navigation_link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: white;
+  text-align: center;
+}
+
+.logo {
+  background-image: url(images/index-bg.jpg);/*не работает почему-то картинки нигде*/
+  background-color: black;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+/*ни один visually-hidden не работает, все надписи видно*/
+.advantages_list {
+  text-align: center;
+
+}
+
+.advantages-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 0%;
+}
+.group_advantages1{
+  background: #82B3D3;
+  
+}
+.group_advantages2{
+  background: rgba(131, 179, 211, 0.12);
+ 
+}
+.road_advantages{
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.index-colum {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+.index-colum-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: black;
+}
+.button_search{
+  align-items: center;
+  text-align: center;
+  
+}
+.button_search a {
+  color:white;
+  background-color: black;
+}
+.newsletter{
+  text-align: center;
+  align-items: center;
+  color:white;
+  background-image: url("images/index-bg.jpg");
+  background-color: black;
+}
+.page_footer_title{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+}
+.contacts{
+  align-items: center;
+  text-align: center;
+
+}
+.number{
+  align-items: center;
+  text-align: center;
+  text-decoration-line:none;
+  color:black;
+}
+.made_in{
+  align-items: center;
+  text-align: center;
+  color:black;
+}
+.inner_header {
+font-family: "PT Sans";
+color:white;
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+background-image: url(images/index-bg.jpg);
+background-color: black;
+}
+.inner-header a {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color:white;
+}
+
+.control-input{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+}
+.catalog-filter-title{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+}
+.button{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+}
+.select-control{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color:black;
+}
+.hotel_card_title{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color:black;
+}
+.accomodation{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color:black;
+}
+.price{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: right;
+color:black;
+}
+.rating_score_button{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color:black;
+}
+.hotel_card a {
+  color:black;
+}
+.pagination a {
+  color:white;
+  background-color:#82B3D3;
+}
