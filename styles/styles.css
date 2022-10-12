@@ -30,6 +30,10 @@ body {
 
 }
 
+/*.visually-hidden{
+  visibility: hidden;
+}*/
+
 .navigation_link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -42,14 +46,27 @@ body {
   text-align: center;
 }
 
-.logo {
-  background-image: url(images/index-bg.jpg);/*не работает почему-то картинки нигде*/
+
+.main_index_logo {
+  background-image: url("../images/index.jpg");
   background-color: black;
   color: white;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+  width: 1200px;
+  height: 485px;
+  display: block;
+
 }
-/*ни один visually-hidden не работает, все надписи видно*/
+
+/*.block_vector{
+  background: url(../images/Vector_index_logo.png) 
+  background-repeat:no-repeat;
+  width:1200px; 
+  height:57px;
+} пыталась вставить белую рамку на фон, непойму как наложить фон на фон*/
+
 .advantages_list {
   text-align: center;
 
@@ -62,6 +79,9 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  background-color: white;
+  width: 400px;
+  height: 384px;
 }
 
 .advantages-description {
@@ -71,17 +91,36 @@ body {
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 0%;
+  background-color: white;
+  width: 400px;
+  height: 384px;
 }
-.group_advantages1{
+
+.group_advantages0 {
+  background: white;
+  width: 400px;
+  height: 384px;
+
+}
+
+.group_advantages1 {
   background: #82B3D3;
-  
+  width: 400px;
+  height: 384px;
+
 }
-.group_advantages2{
+
+.group_advantages2 {
   background: rgba(131, 179, 211, 0.12);
- 
+  width: 400px;
+  height: 384px;
+
 }
-.road_advantages{
+
+.road_advantages {
   background: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  height: 384px;
 }
 
 .index-colum {
@@ -104,137 +143,176 @@ body {
   text-align: center;
   color: black;
 }
-.button_search{
+
+.button_search {
   align-items: center;
   text-align: center;
-  
+
 }
-.button_search a {
-  color:white;
+
+.button_search_link {
+  color: white;
   background-color: black;
 }
-.newsletter{
+
+.newsletter {
   text-align: center;
   align-items: center;
-  color:white;
+  color: white;
   background-image: url("images/index-bg.jpg");
   background-color: black;
 }
-.page_footer_title{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
+
+.page_footer_title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
-.contacts{
+
+.contacts {
   align-items: center;
   text-align: center;
 
 }
-.number{
+
+.number {
   align-items: center;
   text-align: center;
-  text-decoration-line:none;
-  color:black;
+  text-decoration-line: none;
+  color: black;
 }
-.made_in{
+
+.made_in {
   align-items: center;
   text-align: center;
-  color:black;
+  color: black;
 }
+
 .inner_header {
-font-family: "PT Sans";
-color:white;
-font-style: normal;
-font-weight: 700;
-font-size: 60px;
-line-height: 78px;
-background-image: url(images/index-bg.jpg);
-background-color: black;
-}
-.inner-header a {
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-color:white;
+  background-image: url("../images/index.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  color: white;
+  width: 1200px;
+  height: 412px;
+  background-size: cover;
+
 }
 
-.control-input{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
+.title-filter {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
 }
-.catalog-filter-title{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-text-transform: capitalize;
+
+.breadcumbs {
+  font-family: "PT Sans";
+  Font-size: 16px;
+  Line-height: 21px;
+  text-align: Left;
+  vertical-align: Top;
+  color: white;
 }
-.button{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
+
+.inner-header a {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
 }
-.select-control{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-color:black;
+
+.control-input {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  vertical-align: top;
 }
-.hotel_card_title{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-color:black;
+
+.catalog-filter-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: left;
+  vertical-align: top;
 }
-.accomodation{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-color:black;
+
+.button {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
-.price{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-text-align: right;
-color:black;
+
+.select-control {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
 }
-.rating_score_button{
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-text-transform: uppercase;
-color:black;
+
+.hotel_card_title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
 }
+
+.accomodation {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+}
+
+.price {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  color: black;
+}
+
+.rating_score_button {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
 .hotel_card a {
-  color:black;
+  color: black;
 }
+
 .pagination a {
-  color:white;
-  background-color:#82B3D3;
+  color: white;
+  background-color: #82B3D3;
 }
