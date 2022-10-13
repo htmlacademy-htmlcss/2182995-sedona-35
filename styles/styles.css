@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
 
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 
 }
@@ -12,7 +12,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -48,24 +48,19 @@ body {
 
 
 .main_index_logo {
-  background-image: url("../images/index.jpg");
+  background-image: url(../images/Vector_botton_svg.svg), url("../images/index.jpg");
   background-color: black;
+  background-position: center bottom, center;
   color: white;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
   background-size: cover;
-  background-position: center;
   width: 1200px;
   height: 485px;
   display: block;
+  margin: 0 auto;
 
 }
 
-/*.block_vector{
-  background: url(../images/Vector_index_logo.png) 
-  background-repeat:no-repeat;
-  width:1200px; 
-  height:57px;
-} пыталась вставить белую рамку на фон, непойму как наложить фон на фон*/
 
 .advantages_list {
   text-align: center;
@@ -82,6 +77,8 @@ body {
   background-color: white;
   width: 400px;
   height: 384px;
+  text-align: Center;
+  vertical-align: Top;
 }
 
 .advantages-description {
@@ -94,12 +91,15 @@ body {
   background-color: white;
   width: 400px;
   height: 384px;
+  text-align: Center;
+  vertical-align: Top;
 }
 
 .group_advantages0 {
   background: white;
   width: 400px;
   height: 384px;
+  margin: 0 auto;
 
 }
 
@@ -107,6 +107,7 @@ body {
   background: #82B3D3;
   width: 400px;
   height: 384px;
+  margin: 0 auto;
 
 }
 
@@ -114,6 +115,7 @@ body {
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
   height: 384px;
+  margin: 0 auto;
 
 }
 
@@ -121,6 +123,7 @@ body {
   background: rgba(131, 179, 211, 0.2);
   width: 400px;
   height: 384px;
+  margin: 0 auto;
 }
 
 .index-colum {
@@ -159,8 +162,11 @@ body {
   text-align: center;
   align-items: center;
   color: white;
-  background-image: url("images/index-bg.jpg");
+  background-image: url("../images/Subscribe.jpg");
   background-color: black;
+  width: 1200px;
+  height: 415px;
+  margin: 0 auto;
 }
 
 .page_footer_title {
@@ -191,14 +197,15 @@ body {
   color: black;
 }
 
-.inner_header {
-  background-image: url("../images/index.jpg");
+.main-filter-hotel {
+  background-image: url("../images/Filter.jpg");
   background-color: black;
   background-repeat: no-repeat;
   color: white;
   width: 1200px;
   height: 412px;
   background-size: cover;
+  margin: 0 auto;
 
 }
 
@@ -247,6 +254,12 @@ body {
   text-transform: capitalize;
   text-align: left;
   vertical-align: top;
+}
+
+.control {
+  width: 20px;
+  height: 20px;
+  corner-radius: 4px;
 }
 
 .button {
