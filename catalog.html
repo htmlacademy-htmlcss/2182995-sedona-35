@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <div class="container">
   <header class="main_header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -39,20 +40,22 @@
       </ul>
     </nav>
   </header>
-  <main class="main-inner">
-  
+  <main class="main-inner main-container">
+    <div class="page-container">
+
     <header class="inner_header">
       <section class="main-filter-hotel">
       <h1 class="title-filter">Гостиницы Седоны</h1>
       <ul class="breadcumbs">
         <li class="breadcumbs-item">
-          <a class="breadcumbs-link visually-hidden" href="index.html">Главная</a>
+          <a class="breadcumbs-link " href="index.html">Главная</a>
         </li>
         <li class="breadcumbs-item">
           <a class="breadcumbs-link ">Гостиницы</a>
       </ul>
 
       <section class="catalog-hotels">
+
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -97,8 +100,9 @@
           </fieldset>
         </form>
 
-          <section class="price">
-            <div class="catalog-filter-title">Стоимость,Р:</div>
+
+            <div class="filter-price">
+              <p class="catalog-filter-title">Стоимость,Р:</p>
             <form class="price" action="https://echo.htmlacademy.ru/" method="post">
               <label for="price"></label>
               <input class="field" placeholder="От" type="number" name="min_price" id="price" value="0" required>
@@ -107,13 +111,17 @@
               <label for="price"></label>
               <input class="field" placeholder="До" type="number" name="mах_price" id="price" value="900" required>
             </form>
-            <button class="button" type="submit">Показать</button>
-            <button class="button" type="reset">Сбросить</button>
-          </section>
+            <button class="button-show" type="submit">Показать</button>
+            <button class="button-reset" type="reset">Сбросить</button>
+          </div>
+
         </section>
     </header>
 
     <section class="result_filter">
+      <p class="title-result-filter">НАЙДЕНО ГОСТИНИЦ:38</p>
+
+      <div class="sorting-result">
       <select class="select-control" arial-label="Сортировка">
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
@@ -121,11 +129,12 @@
       </select>
 
       <a href="#" class="button button-light">
-        <span class="visually-hidden">Показать карточки</span></a>
+        <span class="visually-hidden*">Показать карточки</span></a>
       <a href="#" class="button">
-        <span class="visually-hidden">Показать слайд-шоу</span></a>
+        <span class="visually-hidden*">Показать слайд-шоу</span></a>
       <a href="#" class="button">
-        <span class="visually-hidden">Показать список</span></a>
+        <span class="visually-hidden*">Показать список</span></a>
+      </div>
     </section>
     <section>
 
@@ -169,19 +178,23 @@
           <a class="rating_score_button button" href="3">Рейтинг:6.9</a>
         </li>
 
-        <li class="hotel_card">
-          <a class="hotel_card_link" href="hotel.html">
-            <img class="hotel_card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Фото отеля">
-            <h3 class="hotel_card_title"> <b>GreenTree Inn</b></h3>
-          </a>
-          <span class="accomodation">Гостиница</span>
-          <b class="price">От 1500Р</b>
-          <a class="hotel_card_button button" href="#">Подробнее</a>
-          <a class="hotel_card_button button" href="#">В избранное</a>
-          <img class="rating" src="images/2_stars.svg" width="140" height="37" alt="2 звезды">
-          <a class="rating_score_button button" href="3">Рейтинг:5.0</a>
-        </li>
+
       </ul>
+
+      <ul class="hotel-list-next">
+      <li class="hotel_card">
+        <a class="hotel_card_link" href="hotel.html">
+          <img class="hotel_card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Фото отеля">
+          <h3 class="hotel_card_title"> <b>GreenTree Inn</b></h3>
+        </a>
+        <span class="accomodation">Гостиница</span>
+        <b class="price">От 1500Р</b>
+        <a class="hotel_card_button button" href="#">Подробнее</a>
+        <a class="hotel_card_button button" href="#">В избранное</a>
+        <img class="rating" src="images/2_stars.svg" width="140" height="37" alt="2 звезды">
+        <a class="rating_score_button button" href="3">Рейтинг:5.0</a>
+      </li>
+    </ul>
     </section>
 
     <ul class="pagination">
@@ -206,10 +219,12 @@
 
 
     </ul>
+  </div>
 
 
   </main>
   <footer class="page_footer">
+    <div class="page-footer-container">
     <section class="newsletter">
       <h2 class="page_footer_title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -247,4 +262,10 @@
       <a href="https://htmlacademy.ru">https://htmlacademy.ru</a>
 
     </section>
+  </div>
   </footer>
+
+
+</body>
+
+</html>
