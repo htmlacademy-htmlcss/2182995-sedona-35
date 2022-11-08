@@ -114,14 +114,52 @@ body {
   margin: 20px 16px;
 }
 
+.navigation_user .navigation_item:nth-child(1) .navigation_link {
+  background-image: url("/images/Vector_search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+.navigation_user .navigation_item:nth-child(2) .navigation_link {
+  background-image: url("/images/Vector_heart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.button_navigation_link {
+  width: 160px;
+  height: 36px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #756157;
+  color: white;
+  text-decoration: none;
+  font-family: 'PT Sans' sans-serif;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: center;
+  padding: 8px 34px;
+
+}
+
+
+
 
 .main_index_logo {
-  background-image: url(../images/Vector_botton_svg.svg), url("../images/index.jpg");
+  background-image: url(../images/Vector-button-new.svg), url("../images/index.jpg");
   background-color: black;
   background-position: center bottom, center;
-  color: white;
   background-repeat: no-repeat, no-repeat;
-  background-size: cover;
   width: 1200px;
   height: 485px;
   display: block;
@@ -153,6 +191,13 @@ body {
 
 }
 
+.line {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.3);
+  width: 60px;
+
+
+}
+
 .advantages_list {
   margin: 0;
   padding: 0;
@@ -165,7 +210,7 @@ body {
 
 .advantages_item {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 
@@ -180,10 +225,64 @@ body {
   text-align: center;
   vertical-align: Top;
   width: 175px;
-  text-align: center;
   margin: 0;
   padding: 0;
   margin-top: 103px;
+}
+.advantages-title-city{
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: Top;
+  width: 175px;
+  margin: 0;
+  padding: 0;
+  margin-top: 92px;
+
+}
+
+.advantages_description-city{
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  vertical-align: Top;
+  margin-top: 62px;
+  margin-bottom: 111px;
+
+}
+.advantages-title-bridge{
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: Top;
+  width: 175px;
+  margin: 0;
+  padding: 0;
+  margin-top: 92px;
+
+}
+.advantages_description-bridge{
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  vertical-align: Top;
+  margin-top: 62px;
+  margin-bottom: 111px;
+
 }
 
 .advantages_description {
@@ -402,7 +501,12 @@ body {
   text-align: center;
   color: black;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 25px;
+  padding: 0;
+}
+.reason{
+  margin:0;
+  padding:0;
 }
 
 .button_search {
@@ -420,14 +524,16 @@ body {
 
 .button_search_link {
   color: white;
-  background-color: black;
+  background-color: #756157;
   margin-top: 54px;
   padding: 8px 50px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 .newsletter {
   text-align: center;
-  align-items: center;
   color: white;
   background-image: url("../images/background_subscribe.jpg");
   background-color: black;
@@ -441,6 +547,20 @@ body {
 
 .newsletter_form {
   margin-top: 54px;
+}
+
+.newsletter-button {
+  width: 232px;
+  height: 52px;
+  background-color: #82B3D3;
+  color: white;
+  border-radius: 4px;
+  font-family: "PT Sans" sans-serif;
+  font-style: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: center;
 }
 
 .page_footer_title {
@@ -467,11 +587,12 @@ body {
 
 .button-subscribe {
   font-family: "PT Sans", sans-serif;
-  weight: 700px;
+  font-style: 700;
   font-size: 20px;
-  Line-height: 36px;
+  line-height: 36px;
   text-align: center;
   color: white;
+  border-style: none;
 }
 
 .footer-contacts {
@@ -500,6 +621,21 @@ body {
   text-align: center;
   text-decoration-line: none;
   color: black;
+}
+
+.contacts_phone {
+  font-family: "PT Sans" sans-serif;
+  font-style: regular;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: top;
+  color: black;
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  text-decoration: none;
+
 }
 
 .made_in {
@@ -709,6 +845,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-bottom: 60px;
 }
 
 
@@ -803,6 +940,7 @@ body {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  margin-bottom: 60px;
 
 }
 
