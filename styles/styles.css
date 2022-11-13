@@ -112,8 +112,15 @@ body {
   margin: 20px 16px;
 }
 
+.navigation_link:hover{
+  opacity: 0.6;
+}
+.navigation_link:active{
+  opacity: 0.3;
+}
+
 .navigation_link_current {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .navigation_link_current::before {
@@ -137,7 +144,7 @@ body {
 
 
 
-.navigation_user .navigation_item:nth-child(1) .navigation_link {
+.navigation_item-user:nth-child(1) .navigation_link {
   background-image: url("/images/Vector_search.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -146,7 +153,7 @@ body {
 
 }
 
-.navigation_user .navigation_item:nth-child(2) .navigation_link {
+.navigation_item-user:nth-child(2) .navigation_link {
   background-image: url("/images/Vector_heart.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -650,7 +657,7 @@ body {
   background-color: #82B3D3;
   color: white;
   border-radius: 4px;
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: 700;
   font-size: 20px;
   line-height: 36px;
@@ -762,8 +769,7 @@ background: #F2F2F2;
 }
 
 .contacts_phone {
-  font-family: "PT Sans" sans-serif;
-  font-style: regular;
+  font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -774,6 +780,14 @@ background: #F2F2F2;
   margin-bottom: 35px;
   text-decoration: none;
 
+}
+
+.contacts_phone:hover{
+  color: #756157;
+}
+
+.contacts_phone:active{
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .made_in {
@@ -797,7 +811,7 @@ background: #F2F2F2;
 }
 
 .title-filter {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -809,7 +823,7 @@ background: #F2F2F2;
 }
 
 .breadcumbs {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   Font-size: 16px;
   Line-height: 21px;
   text-align: Left;
@@ -842,16 +856,14 @@ background: #F2F2F2;
 
 
 
-/* стрелочка почемуто не отображается
+
 .arrow {
-  background-image: url(/images/Vector_arrow.png);
-  background-repeat: no-repeat;
   margin-right: 11px;
-}*/
+}
 
 
 .inner-header a {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -860,7 +872,7 @@ background: #F2F2F2;
 }
 
 .control {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -870,9 +882,12 @@ background: #F2F2F2;
   margin-left: 25px;
   position: relative;
 }
+.control:hover{
+  opacity: 0.6;
+}
 
 .catalog-filter-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -950,7 +965,7 @@ background: #F2F2F2;
   margin: 0;
   justify-content: flex-start;
   gap: 2px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1095,7 +1110,6 @@ input::-webkit-inner-spin-button {
 .control-input {
   width: 20px;
   height: 20px;
-  corner-radius: 4px;
   margin: 0;
   padding: 0;
 }
@@ -1108,7 +1122,6 @@ input::-webkit-inner-spin-button {
   color: black;
   min-width: 338px;
   min-height: 36px;
-  margin: 0;
   padding: 0;
   margin: 56px 200px 46px 70px;
 
@@ -1142,7 +1155,7 @@ option {
 }
 
 .sorting-result .button {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1233,7 +1246,7 @@ option {
 
 
 .hotel_card_title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1294,7 +1307,7 @@ option {
 }
 
 .accomodation {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1304,7 +1317,7 @@ option {
 
 
 .rating_score_button {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1502,7 +1515,7 @@ option {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1518,7 +1531,7 @@ option {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1534,7 +1547,7 @@ option {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1626,7 +1639,7 @@ option {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: 'PT Sans' sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1679,11 +1692,9 @@ option {
   margin: 0;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  border: 1px;
   border-radius: 4px;
-
-  padding: 0px;
-  font-family: 'PT Sans';
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1795,7 +1806,7 @@ option {
   text-transform: uppercase;
   background-color: #f2f2f2;
   padding: 0;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1960,7 +1971,7 @@ background: #333333;
 box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
 border-radius: 10px;
 color:white;
-font-family: 'PT Sans';
+font-family: 'PT Sans', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -2001,7 +2012,7 @@ bottom: 25px;
   box-sizing: border-box;
   padding: 12px 20px;
   border:none;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -2021,14 +2032,17 @@ bottom: 25px;
   height: 20px;
   background: white;
   border-radius: 4px;
+  left:-25px;
 
 
 }
 .control-mark:hover{
   opacity: 0.6;
+
 }
 .control-mark:focus{
   opacity: 1;
+  border: 3px #83B3D3;
 }
 .control-mark:active{
   opacity: 0.6;
