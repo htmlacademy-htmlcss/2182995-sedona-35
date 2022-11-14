@@ -1167,7 +1167,7 @@ input::-webkit-inner-spin-button {
   gap: 8px;
 }
 
-option {
+.sorting-option {
   font-family: 'PT Sans' sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1919,17 +1919,21 @@ option {
   padding: 0;
   transform: rotate(-90deg);
   position: relative;
-  left: 15px;
-
+  left: -16px;
+  top: 17px;
 }
+
+
 
 .plus {
   background: rgba(117, 97, 87, 0.3);
   height: 14px;
   width: 2px;
   position: relative;
-  left: 20px;
+  left: -20px;
+  top: 17px;
 }
+
 
 .plus::after {
   content: "";
