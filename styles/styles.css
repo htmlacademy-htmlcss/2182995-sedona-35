@@ -132,13 +132,12 @@ body {
   margin-left: 0;
 }
 
-.navigation_link_current::before {
-  position: absolute;
-  height: 2px;
-  background-color: #756257;
-  width: 68px;
-  content: "";
-  transform: translateY(43px);
+.navigation_link_current{
+
+  border-bottom: 2px solid #756257;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+  padding-top: 20px;
 }
 
 .navigation_link_hotel::before {
@@ -231,7 +230,7 @@ body {
 
 .main_index_logo {
   background-image: url(../images/vector-button-new.svg), url("../images/index.jpg");
-  background-color: #6495ED;
+  background-color: #6b869d;
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
   width: 1200px;
@@ -665,7 +664,7 @@ body {
   text-align: center;
   color: white;
   background-image: url("../images/background_subscribe.jpg");
-  background-color: #87CEEB;
+  background-color: #615246;
   width: 1200px;
   min-height: 415px;
   margin: 0 auto;
@@ -767,7 +766,26 @@ body {
   text-transform: uppercase;
   border-radius: 0px 4px 4px 0px;
 }
+.hotel-stars{
+  align-self: center;
+  height: 17px;
+  width: 90px;
+  background: url(../images/star.svg) -4px 0/24.5px 17px repeat-x;
+}
 
+.three-stars{
+  align-self: center;
+  height: 17px;
+  width: 65px;
+  background: url(../images/star.svg) -4px 0/24.5px 17px repeat-x;
+}
+
+.two-stars{
+  align-self: center;
+  height: 17px;
+  width: 40px;
+  background: url(../images/star.svg) -4px 0/24.5px 17px repeat-x;
+}
 .field {
   margin: 0;
   padding: 14px 20px;
@@ -780,6 +798,8 @@ body {
   border-radius: 4px 0px 0px 4px;
   border: none;
   background: #F2F2F2;
+  min-width: 452px;
+  min-height: 52px;
 
 }
 
@@ -868,11 +888,11 @@ body {
 
 .main-filter-hotel {
   background-image: url("../images/background_catalog.jpg");
-  background-color: maroon;
+  background-color: #4b6075;
   background-repeat: no-repeat;
   color: white;
   width: 1200px;
-  height: 412px;
+  min-height: 412px;
   background-size: cover;
   margin: 0 auto;
 
@@ -898,13 +918,14 @@ body {
   vertical-align: Top;
   color: white;
   display: flex;
-  width: 114px;
-  height: 21px;
+  min-width: 114px;
+  min-height: 21px;
   margin: 0;
   padding-top: 8px;
   padding-left: 70px;
   list-style-type: none;
   position: relative;
+  flex-wrap: wrap;
 
 }
 
@@ -961,6 +982,7 @@ body {
   vertical-align: top;
   margin-left: 40px;
   position: relative;
+  display: flex;
 }
 
 .control:hover {
@@ -999,6 +1021,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-infra {
@@ -1452,7 +1475,7 @@ input[type="number"] {
 
 .rating-hotel {
   display: flex;
-  width: 300px;
+  max-width: 300px;
   justify-content: space-between;
 
 }
@@ -1505,7 +1528,7 @@ input[type="number"] {
   display: flex;
   width: 300px;
   padding: 18px 20px 18px 20px;
-  margin-right: 16px;
+  margin-right: 17px;
   margin-bottom: 18px;
   flex-direction: column;
   align-items: center;
