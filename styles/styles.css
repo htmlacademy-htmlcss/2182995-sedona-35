@@ -108,20 +108,20 @@ body {
   background-color: white;
   text-align: center;
   display: block;
-  margin-right: 16px;
-  margin-left: 16px;
+  margin-right: 32px;
 }
 
-.contact-icon {
+.contact_link {
   fill: #83B3D3;
 }
 
-.contact-icon:hover {
+.contact_link:hover {
   fill: #68A2CA;
 }
 
-.contact-icon:focus {
+.contact_link:focus {
   fill: #68A2CA;
+
 }
 
 .contact-icon:active {
@@ -132,10 +132,10 @@ body {
   margin-left: 0;
 }
 
-.navigation_link_current{
+.navigation_link_current {
 
   border-bottom: 2px solid #756257;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
   box-sizing: border-box;
   padding-top: 20px;
 }
@@ -234,9 +234,11 @@ body {
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
   display: block;
   margin: 0 auto;
+  background-size: contain, cover;
+  position: relative;
 
 }
 
@@ -246,7 +248,9 @@ body {
 }
 
 .logo {
-  margin: 51px 371px 82px;
+  position: absolute;
+  top: 52px;
+  right: 371px;
 }
 
 .index-tagline {
@@ -766,26 +770,42 @@ body {
   text-transform: uppercase;
   border-radius: 0px 4px 4px 0px;
 }
-.hotel-stars{
+
+.four-stars {
   align-self: center;
   height: 17px;
   width: 90px;
   background: url(../images/star.svg) -4px 0/24.5px 17px repeat-x;
 }
 
-.three-stars{
+.three-stars {
   align-self: center;
   height: 17px;
   width: 65px;
   background: url(../images/star.svg) -4px 0/24.5px 17px repeat-x;
 }
 
-.two-stars{
+.one-stars{
+  align-self: center;
+  height: 17px;
+  width: 25px;
+  background: url(../images/star.svg) -4px 0/24.5px 17px repeat-x;
+}
+
+.five-stars{
+  align-self: center;
+  height: 17px;
+  width: 115px;
+  background: url(../images/star.svg) -4px 0/24.5px 17px repeat-x;
+}
+
+.two-stars {
   align-self: center;
   height: 17px;
   width: 40px;
   background: url(../images/star.svg) -4px 0/24.5px 17px repeat-x;
 }
+
 .field {
   margin: 0;
   padding: 14px 20px;
@@ -811,6 +831,17 @@ body {
   margin: 0 auto;
   justify-content: space-between;
 
+}
+
+.breadcumbs-item {
+  position: relative;
+  margin-right: 17px;
+}
+
+.breadcumbs-item:not(:last-child)::after {
+  content: url(../images/arrow.svg);
+  position: inherit;
+  left: 7px;
 }
 
 .contacts {
@@ -871,15 +902,19 @@ body {
   cursor: pointer;
 }
 
-.navigation-icon-academy:hover {
+.icon-academy {
+  fill: #000000;
+}
+
+.icon-academy:hover {
   fill: #756157;
 }
 
-.navigation-icon-academy:focus {
+.icon-academy:focus {
   fill: #756157;
 }
 
-.navigation-icon-academy:active {
+.icon-academy:active {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -930,12 +965,10 @@ body {
 }
 
 .breadcumbs-link {
-  margin-right: 11px;
   cursor: pointer;
 }
 
 .breadcumbs-link_current {
-  margin-right: 11px;
   cursor: pointer;
   position: relative;
 }
@@ -1007,6 +1040,7 @@ body {
 .catalog-filter {
   display: flex;
   margin-left: 70px;
+  margin-bottom: 73px;
 }
 
 .catalog-filter-list {
@@ -1252,7 +1286,7 @@ input[type="number"] {
   min-width: 338px;
   min-height: 36px;
   padding: 0;
-  margin: 56px 200px 40px 70px;
+  margin: 56px 200px 35px 70px;
 
 
 }
@@ -1270,7 +1304,7 @@ input[type="number"] {
 .sorting-button {
   display: flex;
   margin-left: 72px;
-  align-items: center;
+  padding-top: 50px;
   gap: 8px;
   padding-bottom: 5px;
 }
@@ -1343,7 +1377,7 @@ input[type="number"] {
 
 
 .select-control {
-  font-style: normal;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1354,13 +1388,19 @@ input[type="number"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 16px;
   gap: 94px;
   width: 292px;
   height: 49px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: white;
+  appearance: none;
+  position: relative;
+  background-image: url(../images/arrow-vertical.svg);
+  background-position-x: 257px;
+  background-position-y: center;
+  background-repeat: no-repeat;
 
 }
 
@@ -1432,7 +1472,7 @@ input[type="number"] {
 }
 
 .hotel_card-image {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .description-hotel {
@@ -1680,10 +1720,31 @@ input[type="number"] {
   border: 4px white;
 }
 
+.three-points {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 15px 22px;
+  cursor: pointer;
+}
+.three-points:hover{
+  opacity: 0.6;
+}
+.three-points:focus{
+  opacity: 0.6;
+}
+
+
 .pagination-link:hover {
   background-color: #68A2CA;
   border: #82B3D3;
   border-radius: 4px;
+
 
 }
 
@@ -1756,7 +1817,7 @@ input[type="number"] {
   width: 400px;
   height: 60px;
   list-style-type: none;
-  justify-content: space-around;
+  gap: 8px;
   margin: 0;
   padding: 0;
   margin-bottom: 60px;
@@ -1925,16 +1986,9 @@ input[type="number"] {
 .plus-minus {
   cursor: pointer;
   position: relative;
+  z-index: 4;
 }
 
-.plus-minus::after {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  background-color: transparent;
-  content: '';
-  position: absolute;
-}
 
 .plus-minus {
   fill: #756157;
@@ -1946,13 +2000,6 @@ input[type="number"] {
   fill: black;
   fill-opacity: 1;
 }
-
-.plus-minus + .plus-minus::after:focus {
-  fill: black;
-  fill-opacity: 1;
-  border: 3px solid #82B3D3;
-}
-
 
 .plus-minus:active {
   fill: #756157;
@@ -2029,17 +2076,27 @@ input[type="number"] {
   height: 48px;
 }
 
+.minus {
+  z-index: 5;
+}
+
+.plus {
+  z-index: 5;
+}
+
+
 .adults-line button {
-  width: 40px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 15px 10px;
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  position: relative;
 }
 
 .departure-date:hover {
@@ -2096,9 +2153,11 @@ input[type="number"] {
   width: 110px;
   border-radius: 4px;
   background-color: #f2f2f2;
-  margin-left: 46px;
+  margin-left: 38px;
 
 }
+
+
 
 .children-line {
   display: flex;
@@ -2148,16 +2207,36 @@ input[type="number"] {
   display: block;
 }
 
+.info:focus + .popover {
+  display: block;
+}
+
 .info:focus {
   outline: 3px solid #83B3D3;
 }
 
+.adult-button button:focus {
+  outline: 3px solid #82B3D3;
+}
+
+.children-button button:focus {
+  outline: 3px solid #82B3D3;
+}
+
+.adults-line input:focus {
+  outline: 3px solid #82B3D3;
+}
+
+.children-line input:focus {
+  outline: 3px solid #82B3D3;
+}
+
 .children-line button {
-  width: 40px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 15px 10px;
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
